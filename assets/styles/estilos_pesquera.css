@@ -74,3 +74,7 @@ nav > ul {
     border-bottom: 1px solid #fff;
     padding-bottom: 0.5rem;
 }
+
+#footer-blog div:nth-child(2) {
+    front-size: 0.9rem;
+}
