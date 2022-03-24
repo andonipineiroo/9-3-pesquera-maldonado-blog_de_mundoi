@@ -76,5 +76,6 @@ nav > ul {
 }
 
 #footer-blog div:nth-child(2) {
-    front-size: 0.9rem;
+   
+    font-size: 0.9rem;
 }
