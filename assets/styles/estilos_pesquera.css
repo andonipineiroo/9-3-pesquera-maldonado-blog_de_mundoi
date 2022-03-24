@@ -12,7 +12,7 @@ article{ color:rgb(255, 255, 255);padding: 1.5rem;
 
 nav>ul>li { list-style: none;
 }
-nav>ul>li>a {
+nav>ul>li>a {   
     text-decoration: none;
 }
 #footer_blog{
