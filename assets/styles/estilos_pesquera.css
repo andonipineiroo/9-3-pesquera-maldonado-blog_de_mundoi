@@ -1,81 +1,109 @@
-body{ background-color:rgb(97, 96, 96);
+body {
+    background-color: black;
+    color: white;
 }
-article{ color:rgb(255, 255, 255);padding: 1.5rem;
-    border-bottom: #FFFFFF 1px solid;
+p{
+    color:rgb(255, 0, 0);
+    font-size:medium;
+    text-align:justify;
 }
-#titulo_del_blog{ text-align: center;
-    font-size: 3rem;
-    color:white;
+h2{
+    text-align: center;
+    color: white;
 }
-.resaltado{ color:rgb(39, 163, 146);
+article{
+    background-color: rgb(red, green, blue);
+    padding: 1.5rem;
+    border-bottom: 1px solid #ffffff;
 }
-
-nav>ul>li { list-style: none;
+nav>ul>li {
+    color: black;
+    
 }
-nav>ul>li>a {   
-    text-decoration: none;
+nav>ul>li>a {
+    text-decoration: #fff;
 }
-#footer_blog{
-    padding: 2rem;
+.titulo_del_blog{ text-align: center; 
+font-size: 3rem; 
 }
-
-footer{
-    color:#FFFFFF;
+#footerblog{
+    margin: 2rem;
+}
+.ilustracion figcaption{
+margin-top: 1rem;
+margin-left: 1rem;
+font-style: italic;
 }
 .ilustracion{
     border: white 4px solid;
+    display: inline-block;
 }
-
-.ilustracion figcaption {
-    margin-top: 1rem;
-    margin-left: 1rem;
-    font-style: italic;
-}
-/* grid */
-section {
-    
-    /* despliégate como  grid */
+section{
     display: grid;
-    /* Crea 12 columnas cada una de una fracción usando la función repeat*/
     grid-template-columns: repeat(12, 1fr);
-    /* deja que las filas(renglones) ocupen el alto que necesitan */
     grid-auto-rows: auto;
-    /* añade un espacio entre los elementos del grid de 3rem */
     gap: 3rem;
 }
-
-/* Termina grid */
-
-/* apunta sólo a los header que son hijos directos de section */
 section>header {
-    /* esta sección se extenderá 12 columnas. */
-    grid-column: span 12;
+    grid-column: span 12
 }
-/* apunta sólo a los header que son hijos directos de section */
-section>main{
-    /* esta sección se extenderá 8 columnas. */
+section>main {
     grid-column: span 8;
 }
-/* apunta sólo a los header que son hijos directos de section */
 section>aside {
-    /* esta sección se extenderá 4 columnas. */
     grid-column: span 4;
 }
-/* apunta sólo a los header que son hijos directos de section */
 section>footer {
-    /* esta sección se extenderá 12 columnas. */
     grid-column: span 12;
 }
-
-nav > ul {
+nav{
+    font-size: 1.3rem;
+}
+nav> ul{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid  #fff;
     padding-bottom: 0.5rem;
 }
-
-#footer-blog div:nth-child(2) {
-   
+nav>ul>li>a{
+    text-decoration: underline;
+    color: greenyellow;
+}
+article>header>hgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+article>header>hgroup>h2{
+    display: flex;
+    align-items: center;
+}
+article>head>hgroup>h2>img{
+    margin-right: 1rem;
+}
+#footer_blog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 1.3rem;
+}
+#footer_blog div:nth-child(2) {
     font-size: 0.9rem;
+}
+aside>div>img {
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+aside>h2{
+    text-align: center;
+    font-size: 1.3rem;
+}
+aside>div:nth-child(odd){
+    background-color: rgb(44, 43, 43);
 }
